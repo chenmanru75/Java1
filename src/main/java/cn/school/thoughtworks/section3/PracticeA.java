@@ -5,8 +5,15 @@ import java.util.Map;
 
 public class PracticeA {
     Map<String,Integer> createUpdatedCollection(Map<String,Integer> collectionA, Map<String,List<String>> object) {
-        //实现练习要求，并改写该行代码。
-
-        return null;
+        List<String> list= object.get("value");
+        for (Map.Entry<String, Integer> entry : collectionA.entrySet()) {
+            for(String str:list){
+                if(str == entry.getKey()){
+                    collectionA.put(str,entry.getValue()-1);
+                }
+            }
+//            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+        }
+        return collectionA;
     }
 }
