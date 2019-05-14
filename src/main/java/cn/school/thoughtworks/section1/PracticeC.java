@@ -1,11 +1,18 @@
 package cn.school.thoughtworks.section1;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PracticeC {
     List<String> collectSameElements(List<String> collection1, Map<String,List<String>> collection2) {
-        //实现练习要求，并改写该行代码。
-        return null;
+        List<String> res = new ArrayList<>();
+        List<String> list= collection2.get("value");
+        for (String str:collection1) {
+            for (String str1:list ) {
+                if (str.equals(str1)){
+                    res.add(str);
+                }
+            }
+        }
+        return  res;
     }
 }
