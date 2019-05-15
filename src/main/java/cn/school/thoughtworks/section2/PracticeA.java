@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 public class PracticeA {
-    Map<String,Integer> countSameElements(List<String> collection1) {
+    public  Map<String,Integer> countSameElements(List<String> collection1) {
         Map<String, Integer> res = new HashMap<>();
         for(String str:collection1){
             Integer num = res.get(str);

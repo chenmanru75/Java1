@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public class PracticeB {
-    Map<String,Integer> createUpdatedCollection(Map<String,Integer> collectionA, Map<String,List<String>> object) {
+    public Map<String,Integer> createUpdatedCollection(Map<String,Integer> collectionA, Map<String,List<String>> object) {
         List<String> list= object.get("value");
         for (Map.Entry<String, Integer> entry : collectionA.entrySet()) {
             for(String str:list){
